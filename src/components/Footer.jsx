@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Centro Raíces. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Centro Raíces. Todos los derechos reservados. Desarrollado por Angel Sanchez</p>
       </div>
     </footer>
   );
