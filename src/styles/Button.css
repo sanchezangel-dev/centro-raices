@@ -1,0 +1,48 @@
+.btn {
+  text-decoration: none; /* Quita el subrayado si es un Link */
+  display: inline-block; /* Asegura que respete el padding y margin-top */
+  text-align: center;    /* Centra el texto */
+  
+  /* ... el resto de tu código igual ... */
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #2d5738;
+  color: white;
+  border: 1px solid #a4c639;
+  padding: 14px 35px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 35px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  max-width: 100%;
+
+}
+
+.btn-primary:hover {
+  background-color: #a4c639;
+  color: #2d5738;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2D5738;
+  border: 2px solid #2D5738;
+}
+
+.btn-secondary:hover {
+  background-color: #2D5738;
+  color: white;
+}
+

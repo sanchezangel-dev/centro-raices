@@ -1,0 +1,105 @@
+.salud-hero {
+  height: 70vh;
+  background: url('/img/salud-integral.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.salud-content {
+  padding: 80px 5%;
+  background-color: #F2EDE4;
+}
+
+.salud-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1250px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+ 
+#Supervicion {
+  scroll-margin-top: 90px;
+}
+
+.salud-card {
+  background: white;
+  padding: 45px 35px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 0 1 380px; 
+  max-width: 400px;
+  min-width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-bottom: 5px solid #a4c639;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-description{
+  font-size: 1.5rem;
+}
+
+.salud-icon i {
+  font-size: 3rem;
+  color: #2D5738;
+  margin-bottom: 25px;
+}
+
+.salud-card h3 {
+  color: #2D5738;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.salud-desc {
+  color: #555;
+  line-height: 1.8; 
+  margin-bottom: 30px;
+  font-size: 0.98rem;
+  text-align: left; 
+  flex-grow: 1;
+}
+
+.salud-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.salud-highlights span {
+  font-weight: 600;
+  color: #2D5738;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.salud-highlights i {
+  color: #a4c639;
+  font-size: 0.7rem;
+}
+
+.btn-salud-card {
+  padding: 10px 25px !important;
+  font-size: 0.8rem !important;
+  width: fit-content;
+}
+
+.salud-footer-strip {
+  background-color: #2D5738;
+  color: white;
+  padding: 50px 15%;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

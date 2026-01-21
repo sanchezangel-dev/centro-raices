@@ -1,0 +1,142 @@
+/* --- HERO SECTION (Consistencia Total) --- */
+.talleres-hero {
+  height: 70vh;
+  background: url('/img/fondo-talleres.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-white {
+  font-size: 4rem;
+  color: #F2EDE4;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+  line-height: 0.9;
+}
+
+.title-green {
+  font-size: 3.5rem;
+  color: #a4c639;
+  text-transform: lowercase;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.hero-description {
+  color: #F2EDE4;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+/* --- CONTENIDO --- */
+.talleres-section {
+  padding: 80px 5%;
+  background-color: #F2EDE4;
+}
+
+.talleres-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.taller-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-bottom: 5px solid #a4c639;
+  display: flex;
+  flex-direction: column;
+}
+
+.taller-icon i {
+  font-size: 3rem;
+  color: #2D5738;
+  margin-bottom: 25px;
+}
+
+.taller-card h3 {
+  color: #2D5738;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.taller-desc {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  flex-grow: 1; 
+}
+
+/*Botones*/
+
+.btn-taller-card {
+  padding: 10px 25px !important; 
+  font-size: 0.8rem !important;   
+  margin-top: 20px !important;    
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important; 
+  width: fit-content;             
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/*Las estrellitas */
+
+.taller-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  align-items: flex-start; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.taller-highlights span {
+  font-weight: 600;
+  color: #2D5738;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  text-align: left;
+}
+
+.taller-highlights i {
+  color: #a4c639;
+  font-size: 0.8rem;
+  width: 15px; 
+}
+
+/* --- FRANJA FINAL --- */
+.talleres-footer-strip {
+  background-color: #2D5738;
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title-white { font-size: 2.5rem; }
+  .title-green { font-size: 2rem; }
+}

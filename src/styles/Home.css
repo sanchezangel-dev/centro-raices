@@ -1,0 +1,370 @@
+/* --- RESET Y CONTENEDOR --- */
+.home-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2ede4;
+}
+
+/* --- HERO CARRUSEL (80% Altura) --- */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+/* --- LÓGICA DE SLIDES --- */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* --- IMAGEN --- */
+.slide-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* --- EL GRADIENTE VERDE COPADO (Recuperado) --- */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  /* El verde institucional entra desde los costados y se desvanece al centro */
+  background: linear-gradient(90deg, 
+    rgba(45, 87, 56, 0.7) 0%, 
+    rgba(45, 87, 56, 0.2) 50%, 
+    rgba(45, 87, 56, 0.7) 100%);
+  /* Efecto de 'vidrio' muy sutil para integrar todo */
+  backdrop-filter: blur(1px); 
+  z-index: 2;
+}
+
+/* --- CONTENIDO --- */
+.slide-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left {
+  flex: 1;
+  max-width: 650px;
+}
+
+
+.slide-title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  color: #ffffff;
+  line-height: 1.1;
+  text-shadow: 
+    3px 3px 15px rgba(0, 0, 0, 0.8), 
+    0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slide-highlight {
+  display: block;
+  color: #a4c639; 
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* --- BOTÓN RECTANGULAR --- */
+.btn-primary-raices {
+  background-color: #2d5738;
+  color: white;
+  border: 1px solid #a4c639;
+  padding: 14px 35px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 35px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-primary-raices:hover {
+  background-color: #a4c639;
+  color: #2d5738;
+}
+
+/* --- SLOGAN --- */
+.content-right {
+  flex: 0.4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slide-slogan {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: #fff;
+  text-align: right;
+  border-right: 5px solid #a4c639;
+  padding-right: 20px;
+  max-width: 300px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* --- FLECHAS --- */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 30;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: rgba(45, 87, 56, 0.8);
+  color: #a4c639;
+}
+
+.prev { left: 0; border-radius: 0 8px 8px 0; }
+.next { right: 0; border-radius: 8px 0 0 8px; }
+
+/* --- DOTS --- */
+.carousel-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 30;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #a4c639;
+  width: 30px;
+  border-radius: 10px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .slide-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slide-slogan {
+    text-align: center;
+    border-right: none;
+    border-top: 4px solid #a4c639;
+    padding: 15px 0 0 0;
+    margin: 20px auto 0;
+  }
+}
+
+
+/* --- SECCIÓN SERVICIOS --- */
+.services-section {
+  padding: 60px 5% 20px 5%;
+  background-color: #f2ede4; 
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-subtitle {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #6DA34D;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #2D5738;
+}
+
+.services-title span {
+  font-weight: 800;
+  color: #a4c639;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #a4c639;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+/* --- GRID Y CARDS --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px; 
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(45, 87, 56, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(45, 87, 56, 0.1);
+}
+
+/* Imagen de la Card */
+.card-image-wrapper {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover .card-image-wrapper img {
+  transform: scale(1.1);
+}
+
+.card-icon-floating {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background: #a4c639;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+/* Cuerpo de la Card */
+.card-body {
+  padding: 40px 30px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2D5738;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: auto;
+  padding-bottom: 25px;
+}
+
+.espacios-highlight {
+  background-color: #f9fbf8; 
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.highlight-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.highlight-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 0px #4a6741; 
+}
+
+.highlight-content {
+  flex: 1;
+}
+
+.highlight-content h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .highlight-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .highlight-image img {
+    box-shadow: 10px 10px 0px #4a6741;
+  }
+}

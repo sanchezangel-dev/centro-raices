@@ -1,0 +1,28 @@
+:root {
+  /* Verde para los titulos*/
+  --color-titulos: #2D5738; 
+  --color-texto: #444444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px;
+  line-height: 1.6; 
+  color: var(--color-texto);
+  background-color: #F2EDE4;
+}
+
+h1, h2, h3, h4, .nav-link {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  color: var(--color-titulos);
+  text-wrap: balance;
+}
+
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
