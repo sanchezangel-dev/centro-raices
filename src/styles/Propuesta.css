@@ -152,24 +152,6 @@
   scroll-margin-top: 60px;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 1024px) {
-  .pilares-grid {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .propuesta-hero h1 { font-size: 2.5rem; }
-  .pilares-grid { 
-    grid-template-columns: 1fr; 
-    margin-top: 40px;
-  }
-  .propuesta-hero { height: 50vh; }
-  .propuesta-detalle { padding: 40px 20px; border-radius: 0; margin-bottom: 60px; }
-}
-
 /* --- SECCIÓN DETALLE  --- */
 .propuesta-detalle {
   max-width: 1100px; 
@@ -213,15 +195,46 @@
   font-weight: 600;
 }
 
-/* Ajuste Responsive */
-@media (max-width: 1024px) {
-  .detalle-grid {
-    grid-template-columns: 1fr;
-    max-width: 700px;
-    margin: 40px auto 0;
-    gap: 40px;
+/* --- RESPONSIVE CORREGIDO --- */
+@media (max-width: 768px) {
+  /* 1. Bajamos más el tamaño de la fuente para que no se pise con el logo */
+  .propuesta-hero h1 { 
+    font-size: 1.8rem; /* Estaba en 2.5, era muy grande para móvil */
+    padding-top: 20px;
   }
-  .detalle-bloque {
-    text-align: center;
+
+  /* 2. El texto introductorio también debe bajar */
+  .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  /* 3. Aumentamos la altura del Hero en móvil */
+  /* 50vh era muy poco y el texto se salía. 70vh le da aire. */
+  .propuesta-hero { 
+    height: 75vh; 
+    background-attachment: scroll; /* Mejor desempeño en móviles */
+  }
+
+  /* 4. Ajustamos el padding del contenedor */
+  .hero-overlay {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .pilares-grid { 
+    grid-template-columns: 1fr; 
+    margin-top: 20px; /* Evita que las tarjetas pisen el contenido de arriba */
+    padding: 20px;
+  }
+
+  .propuesta-detalle { 
+    padding: 40px 20px; 
+    border-radius: 0; 
+    margin-bottom: 40px; 
+  }
+
+  .frase-cierre p {
+    font-size: 1.5rem;
   }
 }

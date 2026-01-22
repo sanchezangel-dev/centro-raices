@@ -120,7 +120,7 @@
 }
 
 .slide-slogan {
-  font-family: 'Dancing Script', cursive;
+  font-family:italic,cursive;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   color: #fff;
   text-align: right;

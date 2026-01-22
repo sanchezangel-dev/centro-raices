@@ -190,26 +190,28 @@
 }
 
 
-@media (max-width: 900px) {
-  .contacto-grid { 
-    flex-direction: column; 
-    min-height: auto;
-  }
+/* --- RESPONSIVE CONTACTO --- */
+@media (max-width: 768px) {
   
-  .contacto-hero { 
-    height: 40vh; 
+  .contacto-grid, .contacto-container { 
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px;
+    padding: 20px;
   }
-  
-  .contacto-main-container { 
-    margin-top: 20px; 
+
+  .contacto-form {
+    width: 100% !important;
   }
-  
-  .form-side, 
-  .datos-contacto-rapido {
-    padding: 30px;
+
+  .mapa-container, iframe {
+    width: 100% !important;
+    height: 400px !important; 
+    margin-top: 20px;
   }
-  
-  .map-wrapper { 
-    height: 300px; 
+
+  .contacto-form h2 {
+    font-size: 1.8rem;
+    text-align: center;
   }
 }
