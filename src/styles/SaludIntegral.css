@@ -103,3 +103,62 @@
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* --- RESPONSIVE SALUD INTEGRAL --- */
+@media (max-width: 768px) {
+  
+  .salud-hero {
+    height: 65vh;
+  }
+
+  .salud-hero h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important; 
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 1.1rem !important;
+    padding: 10px 20px;
+    line-height: 1.4;
+  }
+
+  .salud-content {
+    padding: 40px 15px; 
+  }
+
+  .salud-card {
+    min-width: 100% !important; 
+    max-width: 100% !important;
+    flex: 1 1 100%;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+
+  .salud-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center; 
+  }
+
+  .salud-highlights {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .salud-highlights span {
+    font-size: 0.8rem;
+  }
+
+  .salud-footer-strip {
+    padding: 40px 20px; 
+    font-size: 1rem;
+  }
+
+  .btn-salud-card {
+    width: 100% !important; 
+    text-align: center;
+    justify-content: center;
+  }
+}

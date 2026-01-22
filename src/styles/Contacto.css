@@ -189,28 +189,28 @@
   line-height: 1.4;
 }
 
-/* --- RESPONSIVE CONTACTO DEFINITIVO --- */
+/* --- RESPONSIVE CONTACTO  --- */
 @media (max-width: 768px) {
   
-  /* 1. Eliminamos el margen negativo y el espacio lateral del contenedor principal */
+
   .contacto-main-container {
-    margin: 0 auto !important; /* Quitamos el -80px que lo subía */
-    padding: 0 !important;     /* Quitamos el 5% de espacio lateral */
+    margin: 0 auto !important; 
+    padding: 0 !important;     
     width: 100% !important;
   }
 
-  /* 2. Forzamos a que la Grid sea una sola columna y ocupe todo el ancho */
+  /*Forzamos a que la Grid sea una sola columna y ocupe todo el ancho */
   .contacto-grid {
     flex-direction: column !important;
-    border-radius: 0 !important; /* Para que pegue a los bordes del cel */
+    border-radius: 0 !important; 
     margin: 0 !important;
     width: 100% !important;
     min-height: auto !important;
   }
 
-  /* 3. Ajustamos el lado del Formulario (Lado Blanco) */
+  /* Ajustamos el lado del Formulario (Lado Blanco) */
   .form-side {
-    padding: 40px 20px !important; /* Reducimos el padding para ganar ancho */
+    padding: 40px 20px !important; 
     width: 100% !important;
   }
 
@@ -219,7 +219,7 @@
     font-size: 1.6rem;
   }
 
-  /* 4. Hacemos los inputs bien altos y cómodos */
+  /* Hacemos los inputs bien altos y cómodos */
   .contacto-form input, 
   .contacto-form select, 
   .contacto-form textarea {
@@ -227,30 +227,28 @@
     font-size: 16px !important;
   }
 
-  /* 5. Ajustamos el lado del Mapa (Lado Verde) */
+  /* Ajustamos el lado del Mapa (Lado Verde) */
   .info-side {
     width: 100% !important;
-    order: 2; /* Asegura que el mapa quede debajo del formulario */
+    order: 2; 
   }
 
-  /* 6. ¡MAPA MÁS GRANDE! Le damos 450px de alto */
   .map-wrapper {
     height: 450px !important; 
     min-height: 450px !important;
-    flex: none !important; /* Evita que se colapse */
+    flex: none !important;
   }
 
   .map-wrapper iframe {
     height: 100% !important;
   }
 
-  /* 7. Bloque de datos de contacto */
   .datos-contacto-rapido {
     padding: 30px 20px !important;
   }
 
-  /* 8. Ajuste del Hero para que no ocupe tanto espacio en móvil */
+  /* Ajuste Hero  */
   .contacto-hero {
-    height: 70vh;
+    height: 65vh;
   }
 }

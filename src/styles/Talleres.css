@@ -135,8 +135,67 @@
   text-align: center;
 }
 
-/* Responsive */
+/* --- RESPONSIVE TALLERES --- */
 @media (max-width: 768px) {
-  .title-white { font-size: 2.5rem; }
-  .title-green { font-size: 2rem; }
+  
+  .talleres-hero {
+    height: 65vh;
+  }
+
+  .title-white {
+    font-size: 2.2rem !important; 
+    line-height: 1.1 !important;
+    text-align: center;
+  }
+
+  .title-green {
+    font-size: 2rem !important; 
+    margin-top: 5px !important;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 1rem !important;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .talleres-section {
+    padding: 40px 15px;
+  }
+
+  .talleres-container {
+    gap: 20px;
+  }
+
+  .taller-card {
+    min-width: 100% !important; 
+    max-width: 100% !important;
+    padding: 35px 20px;
+  }
+
+  .taller-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .taller-highlights {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .taller-highlights span {
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+
+  .btn-taller-card {
+    width: 100% !important;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .talleres-footer-strip {
+    padding: 40px 20px;
+    font-size: 1rem;
+  }
 }

@@ -236,7 +236,7 @@
   /* 3. Aumentamos la altura del Hero en móvil */
   /* 50vh era muy poco y el texto se salía. 70vh le da aire. */
   .propuesta-hero { 
-    height: 70vh; 
+    height: 65vh; 
     background-attachment: scroll; /* Mejor desempeño en móviles */
   }
 

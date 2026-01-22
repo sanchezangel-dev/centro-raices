@@ -26,3 +26,13 @@ h1, h2, h3, h4, .nav-link {
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .hero-description, 
+  .hero-overlay-descripcion {
+    font-weight: 600 !important; /* Un poco más grueso sin ser negrita total */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Crea contraste con el fondo */
+    line-height: 1.4;
+    color: #ffffff;
+  }
+}
