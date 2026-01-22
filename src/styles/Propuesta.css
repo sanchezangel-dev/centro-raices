@@ -199,20 +199,44 @@
 @media (max-width: 768px) {
   /* 1. Bajamos más el tamaño de la fuente para que no se pise con el logo */
   .propuesta-hero h1 { 
-    font-size: 1.8rem; /* Estaba en 2.5, era muy grande para móvil */
+    font-size: 2rem; /* Estaba en 2.5, era muy grande para móvil */
     padding-top: 20px;
   }
 
+@media (max-width: 768px) {
+  /* 1. Forzamos a que los bloques de texto se apilen verticalmente */
+  .detalle-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px; /* Espacio entre cada bloque */
+    text-align: center; /* Centramos el texto para que se vea mejor en móviles */
+    padding: 0 10px;
+  }
+
+  /* 2. Ajustamos los títulos internos para que no se vean gigantes */
+  .detalle-bloque h3 {
+    font-size: 1.3rem;
+    display: block; /* Para que la línea de abajo ocupe el ancho necesario */
+    margin: 0 auto 15px;
+  }
+
+  /* 3. Le damos un poco más de aire a la sección verde */
+  .propuesta-detalle {
+    padding: 60px 25px;
+    margin-bottom: 40px;
+  }
+}
+
   /* 2. El texto introductorio también debe bajar */
   .intro-text {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 
   /* 3. Aumentamos la altura del Hero en móvil */
   /* 50vh era muy poco y el texto se salía. 70vh le da aire. */
   .propuesta-hero { 
-    height: 75vh; 
+    height: 70vh; 
     background-attachment: scroll; /* Mejor desempeño en móviles */
   }
 
