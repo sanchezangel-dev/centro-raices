@@ -59,8 +59,8 @@ const ApoyoEscolar = () => {
 
           {/* CIENCIAS EXACTAS Y NATURALES */}
           <div className="materia-item"><i className="fa-solid fa-dna"></i><span>Cs. Naturales / Biología</span></div>
-          <div className="materia-item"><i className="fa-solid fa-flask-vial"></i><span>Físico-Química</span></div>
-          <div className="materia-item"><i className="fa-solid fa-atom"></i><span>Física / Química</span></div>
+          <div className="materia-item"><i className="fa-solid fa-flask-vial"></i><span>Química</span></div>
+          <div className="materia-item"><i className="fa-solid fa-atom"></i><span>Física</span></div>
 
           {/* CIENCIAS SOCIALES */}
           <div className="materia-item"><i className="fa-solid fa-earth-americas"></i><span>Geografía</span></div>
