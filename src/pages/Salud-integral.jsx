@@ -33,7 +33,7 @@ const SaludIntegral = () => {
                         <div className="salud-highlights">
                             <span><i className="fa-solid fa-star"></i> Abordaje clínico personalizado</span>
                             <span><i className="fa-solid fa-star"></i> Orientación a padres y familias</span>
-                            <span><i className="fa-solid fa-star"></i> Supervisión de casos profesionales</span>
+                            <span><i className="fa-solid fa-star"></i> Evaluación y diagnóstico integral</span>
                         </div>
                         <div className="btn-container">
                            <WhatsAppLink servicio='Psicologia'>
