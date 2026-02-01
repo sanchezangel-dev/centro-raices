@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Contacto y Redes */}
         <div className="footer-contact">
           <h4>Contacto</h4>
-          <p><strong>Ubicación:</strong>Irala 73 <span style={{ color: '#ffffff', margin: '0 8px', fontWeight: 'bold' }}>•</span> La Boca, CABA</p>
+          <p><strong>Ubicación:</strong>Irala 75 <span style={{ color: '#ffffff', margin: '0 8px', fontWeight: 'bold' }}>•</span> La Boca, CABA</p>
           <p><strong>Mail:</strong>consultas@centroraices.info</p>
           <p><strong>Teléfono:</strong>+54 9 11 7826-0188</p>
 
