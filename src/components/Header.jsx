@@ -40,7 +40,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink to="/ApoyoEscolar" className="nav-link" onClick={closeMenu}>
-              Apoyo Escolar
+              Apoyo Académico
             </NavLink>
           </li>
           <li>

@@ -9,7 +9,7 @@ const ApoyoEscolar = () => {
       {/* Banner Principal - Consistencia con Home/Propuesta */}
       <section className="apoyo-hero" style={{ backgroundImage: "url('/img/apoyo-escolar.jpg')" }}>
         <div className="hero-overlay">
-          <h1 className="title-white">APOYO ESCOLAR</h1>
+          <h1 className="title-white">APOYO ACADÉMICO</h1>
           <h2 className="title-green">abriendo nuevos caminos</h2>
           <p className='hero-overlay-descripcion'> Acompañamiento pedagógico para potenciar el aprendizaje </p>
         </div>
@@ -42,6 +42,22 @@ const ApoyoEscolar = () => {
             </div>
             <h3>Inglés</h3>
             <p>Apoyo escolar en idioma inglés para todos los niveles, gramática y conversación.</p>
+          </div>
+
+          <div className="nivel-card">
+            <div className="nivel-icon">
+              <i className="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>CBC e Ingreso a Universidad</h3>
+            <p>Acompañamiento en la transición al nivel superior, organización del estudio y comprensión de textos para materias de ingreso.</p>
+          </div>
+
+          <div className="nivel-card">
+            <div className="nivel-icon">
+              <i className="fa-solid fa-file-signature"></i>
+            </div>
+            <h3>Tesis y Tesinas</h3>
+            <p>Tutoría personalizada en metodología, estructura y redacción académica para trabajos finales de carrera y defensas.</p>
           </div>
 
         </div>

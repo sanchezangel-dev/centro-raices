@@ -15,17 +15,17 @@ const Home = () => {
     },
     {
       id: 2,
-      title: "Nivel Primario, Secundario y Inglés",
-      highlight: "Apoyo Escolar Personalizado",
-      slogan: "Herramientas para un aprendizaje significativo.",
+      title: "Acompañamiento Pedagógico Integral",
+      highlight: "Apoyo Académico",
+      slogan: "Estrategias para alcanzar tus metas académicas.",
       img: "/img/apoyo-escolar.jpg",
       btnText: "Ver niveles",
       link: "/Apoyoescolar" 
     },
     {
       id: 3,
-      title: "Psicología y Fonoaudiología",
-      highlight: "Salud Integral y Bienestar",
+      title: "Salud Mental y Neurodesarrollo",
+      highlight: "Salud Integral",
       slogan: "Un abordaje humano para el desarrollo pleno.",
       img: "/img/salud-integral.jpg",
       btnText: "Ver detalles",
@@ -138,8 +138,8 @@ const Home = () => {
                 <img src="/img/apoyo-card.jpg" alt="Apoyo Escolar" loading="lazy" />
               </div>
               <div className="card-body">
-                <h3>Apoyo Escolar</h3>
-                <p>Acompañamiento pedagógico personalizado para potenciar el aprendizaje en todos los niveles.</p>
+                <h3>Apoyo Académico</h3>
+                <p>Acompañamiento pedagógico personalizado desde el nivel primario hasta el desarrollo de tesis universitarias.</p>
                 <Button text="Ver más" type="secondary" to="/Apoyoescolar" />
               </div>
             </div>
@@ -151,8 +151,8 @@ const Home = () => {
               </div>
               <div className="card-body">
                 <h3>Salud Integral</h3>
-                <p>Un equipo interdisciplinario dedicado al bienestar psicológico y fonoaudiológico.</p>
-                <Button text="Conocer equipo" type="secondary" to="/Salud-integral" />
+                <p>Atención especializada en Salud Mental y Neurodesarrollo: Psicología, Psicopedagogía, Fonoaudiología, Terapia Ocupacional, Psiquiatría e Intervención Temprana.</p>
+                <Button text="Conocer más" type="secondary" to="/Salud-integral" />
               </div>
             </div>
 

@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="footer-sections">
           <h4>Nuestras Áreas</h4>
           <ul>
-            <li>Apoyo Escolar <span>(Primario - Secundario - Ingles)</span></li>
-            <li>Salud Integral <span>(Psicología - Psicopedagogía - Fonoaudiología)</span></li>
+            <li>Apoyo Académico <span>(Primario - Secundario - Universitario - Ingles)</span></li>
+            <li>Salud Integral <span>(Psicología - Psicopedagogía - Fonoaudiología - Psiquiatría - Terapia Ocupacional - Intervención Temprana)</span></li>
             <li>Talleres <span>(Niños, Adolescentes y Adultos)</span></li>
           </ul>
         </div>

@@ -36,9 +36,9 @@ const SaludIntegral = () => {
                             <span><i className="fa-solid fa-star"></i> Evaluación y diagnóstico integral</span>
                         </div>
                         <div className="btn-container">
-                           <WhatsAppLink servicio='Psicologia'>
-                            <Button text="Más info" type="primary" className="btn-salud-card" />
-                           </WhatsAppLink> 
+                            <WhatsAppLink servicio='Psicologia'>
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
+                            </WhatsAppLink>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ const SaludIntegral = () => {
                         </div>
                         <div className="btn-container">
                             <WhatsAppLink servicio='Fonoaudiologia'>
-                            <Button text="Más info" type="primary" className="btn-salud-card" />
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
                             </WhatsAppLink>
                         </div>
                     </div>
@@ -79,12 +79,75 @@ const SaludIntegral = () => {
                         </div>
                         <div className="btn-container">
                             <WhatsAppLink servicio='Psicopedagogía'>
-                            <Button text="Más info" type="primary" className="btn-salud-card" />
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
                             </WhatsAppLink>
                         </div>
                     </div>
 
-                    {/* Nueva Card: Supervisión */}
+                    {/* Terapia Ocupacional */}
+                    <div className="salud-card">
+                        <div className="salud-icon">
+                            <i className="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Terapia Ocupacional</h3>
+                        <p className="salud-desc">
+                            Intervenimos para promover la autonomía en las actividades de la vida diaria. Nos especializamos en el procesamiento sensorial y en brindar estrategias que permitan a la persona desempeñarse con éxito en su hogar, escuela y comunidad, superando desafíos de participación.
+                        </p>
+                        <div className="salud-highlights">
+                            <span><i className="fa-solid fa-star"></i> Integración sensorial</span>
+                            <span><i className="fa-solid fa-star"></i> Entrenamiento en autonomía diaria</span>
+                            <span><i className="fa-solid fa-star"></i> Adaptaciones curriculares y del entorno</span>
+                        </div>
+                        <div className="btn-container">
+                            <WhatsAppLink servicio='Terapia Ocupacional'>
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
+                            </WhatsAppLink>
+                        </div>
+                    </div>
+
+                    {/* Intervención Temprana */}
+                    <div className="salud-card">
+                        <div className="salud-icon">
+                            <i className="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>Intervención Temprana</h3>
+                        <p className="salud-desc">
+                            Un espacio dedicado a la estimulación y seguimiento del desarrollo infantil en los primeros años de vida (0 a 3 años). Nuestro objetivo es detectar y abordar de forma precoz cualquier desafío en el crecimiento, potenciando las capacidades madurativas del niño desde el inicio.
+                        </p>
+                        <div className="salud-highlights">
+                            <span><i className="fa-solid fa-star"></i> Estimulación oportuna del desarrollo</span>
+                            <span><i className="fa-solid fa-star"></i> Detección temprana de desafíos</span>
+                            <span><i className="fa-solid fa-star"></i> Orientación y acompañamiento familiar</span>
+                        </div>
+                        <div className="btn-container">
+                            <WhatsAppLink servicio='Intervención Temprana'>
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
+                            </WhatsAppLink>
+                        </div>
+                    </div>
+
+                    {/* Psiquiatría */}
+                    <div className="salud-card">
+                        <div className="salud-icon">
+                            <i className="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3>Psiquiatría</h3>
+                        <p className="salud-desc">
+                            Abordaje médico especializado en la salud mental de niños, adolescentes y adultos. Realizamos diagnósticos clínicos precisos y seguimientos farmacológicos cuando es necesario, trabajando siempre de manera interdisciplinaria con el equipo terapéutico para un bienestar integral.
+                        </p>
+                        <div className="salud-highlights">
+                            <span><i className="fa-solid fa-star"></i> Diagnóstico y tratamiento clínico</span>
+                            <span><i className="fa-solid fa-star"></i> Seguimiento infanto-juvenil y adultos</span>
+                            <span><i className="fa-solid fa-star"></i> Interconsulta interdisciplinaria</span>
+                        </div>
+                        <div className="btn-container">
+                            <WhatsAppLink servicio='Psiquiatría'>
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
+                            </WhatsAppLink>
+                        </div>
+                    </div>
+
+                    {/* Card: Supervisión */}
                     <div className="salud-card" id="Supervicion">
                         <div className="salud-icon">
                             <i className="fa-solid fa-graduation-cap"></i> {/* Icono de formación/autoridad */}
@@ -100,7 +163,7 @@ const SaludIntegral = () => {
                         </div>
                         <div className="btn-container">
                             <WhatsAppLink servicio='Supervision'>
-                            <Button text="Más info" type="primary" className="btn-salud-card" />
+                                <Button text="Más info" type="primary" className="btn-salud-card" />
                             </WhatsAppLink>
                         </div>
                     </div>
