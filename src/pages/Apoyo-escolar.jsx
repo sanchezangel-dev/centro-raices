@@ -91,10 +91,10 @@ const ApoyoEscolar = () => {
         <div className="apoyo-cta">
           <p className="cta-text">¿Necesitás apoyo en alguna de estas materias?</p>
           <WhatsAppLink servicio="Apoyo Escolar">
-          <Button
-            text="Consultar"
-            type="primary"
-          />
+            <Button
+              text="Consultar"
+              type="primary"
+            />
           </WhatsAppLink>
         </div>
       </section>

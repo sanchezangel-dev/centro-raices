@@ -109,7 +109,7 @@ const Contacto = () => {
                             </div>
                             <div className="dato-item">
                                 <i className="fa-solid fa-envelope"></i>
-                                <p>contacto@centroraices.com</p>
+                                <p>consultas@centroraices.info</p>
                             </div>
                         </div>
                     </div>
