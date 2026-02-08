@@ -96,7 +96,7 @@ const Propuesta = () => {
             <section id="nuestros-espacios" className="espacios-detalle" style={{ padding: '60px 0' }}>
                 <div className="container">
                     <h2>Nuestros <span>Espacios</span></h2>
-                    <p>Contamos con instalaciones diseñadas para la comodidad y seguridad...</p>
+                    <p>Contamos con instalaciones diseñadas para la comodidad y seguridad...(Proximamente)</p>
                     {/* Aquí puedes poner una galería de fotos o una descripción más larga */}
                     <div className="galeria-simple">
                         {/* <img src="..." /> */}

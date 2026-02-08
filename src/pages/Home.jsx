@@ -9,7 +9,7 @@ const Home = () => {
       title: "Red de Acompañamiento Integral para el",
       highlight: "Crecimiento Emocional y Social",
       slogan: "Cuidar el presente, para florecer siempre.",
-      img: "/img/presentacion-home.jpg",
+      img: "/img/centrofrente.jpeg",
       btnText: "Conocer más",
       link: "/Propuesta" 
     },
@@ -55,7 +55,7 @@ const Home = () => {
       title: "Calidez y Seguridad en",
       highlight: "Nuestros Espacios",
       slogan: "Ambientes diseñados para el encuentro.",
-      img: "/img/nuestros-espacios.jpg",
+      img: "/img/hero-espacio.jpeg",
       btnText: "Galería",
       link: "/Propuesta#nuestros-espacios",
 
@@ -187,7 +187,7 @@ const Home = () => {
       <section className="espacios-highlight">
         <div className="highlight-container">
           <div className="highlight-image">
-            <img src="/img/espacios-card.jpg" alt="Nuestras instalaciones" />
+            <img src="/img/espacio-card.jpeg" alt="Nuestras instalaciones" />
           </div>
           <div className="highlight-content">
             <h3>Nuestros <span>Espacios</span></h3>
