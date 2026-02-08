@@ -5,7 +5,7 @@ const Propuesta = () => {
     return (
         <main className="propuesta-container">
             {/* SECCIÓN HERO: Con imagen de fondo (la principal del carrusel) */}
-            <section className="propuesta-hero" style={{ backgroundImage: "url('/img/presentacion-home.jpg')" }}>
+            <section className="propuesta-hero" style={{ backgroundImage: "url('/img/centrofrente.jpeg')" }}>
                 <div className="hero-overlay">
                     <span className="subtitle"><strong>NUESTRA METODOLOGÍA</strong></span>
                     <h1>Una propuesta integral para el <br /><span>desarrollo humano</span></h1>
