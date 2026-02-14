@@ -37,7 +37,7 @@ const Footer = () => {
               <i className="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://facebook.com/tu_cuenta" target="_blank" rel="noreferrer" className="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=61587941320326" target="_blank" rel="noreferrer" className="social-icon">
               <i className="fa-brands fa-facebook"></i>
             </a>
 
