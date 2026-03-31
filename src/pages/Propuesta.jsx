@@ -1,10 +1,65 @@
 import React from 'react';
+// Importamos los componentes de Swiper React
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Importamos los módulos necesarios de Swiper
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+
+// Importamos los estilos de Swiper (estos son obligatorios)
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade'; // Efecto opcional de desvanecido
+
 import '../styles/Propuesta.css';
+
+// --- DATOS DEL CARRUSEL ---
+// Aquí cargás la información de las fotos nuevas. 
+// Asegurate de optimizarlas primero (ver Paso 4).
+const fotosEspacios = [
+    {
+        id: 1,
+        // Reemplazá por la ruta de tu foto optimizada (ej: .webp)
+        url: '/img/recepcion.jpeg', 
+        titulo: 'Nuestra Recepción',
+        descripcion: 'Un espacio cálido y luminoso diseñado para darte la bienvenida y que te sientas cómodo desde el primer momento.'
+    },
+    {
+        id: 2,
+        url: '/img/espacio-consultorio1.jpeg',
+        titulo: 'Consultorios',
+        descripcion: 'Nuestros consultorios combinan diseño y calidez para ofrecerte un entorno seguro y relajante. Un lugar pensado para que te sientas cómodo, contenido y en confianza desde el primer momento.'
+    },
+    {
+        id: 3,
+        url: 'img/espacio-consultorioinfantil.jpeg',
+        titulo: 'Terapias Infantiles en un Entorno Único',
+        descripcion: 'Nuestras instalaciones combinan calidez y funcionalidad para ofrecerte la contención que tu hijo necesita. Un espacio pensado para que se sienta cómodo, escuchado y en confianza desde el primer momento.'
+    },
+        {
+        id: 4,
+        url: 'img/espacio-apoyoescolar.jpeg',
+        titulo: 'Apoyo Escolar',
+        descripcion: 'Un espacio dedicado a la enseñanza y el crecimiento académico, donde cada alumno cuenta con las herramientas y la contención necesarias para potenciar su desempeño escolar.'
+    },
+    {
+        id: 5,
+        url: 'img/espacio-encuentro.jpeg',
+        titulo: 'Espacio de Co-Visión y Encuentro',
+        descripcion: 'Un entorno amplio y funcional diseñado para el intercambio profesional y el aprendizaje grupal. Es el escenario ideal para nuestras instancias de co-visión de casos y capacitaciones, ofreciendo un clima de seriedad y calidez que invita al diálogo y al crecimiento compartido.'
+    },
+    {
+        id: 6,
+        url: 'img/espacio-salaespera.jpeg',
+        titulo: 'Sala de Espera',
+        descripcion: 'Disfrutá de un entorno único y armonioso mientras esperás. Nuestros espacios combinan calidez y diseño para ofrecerte la contención que necesitás desde que llegás a nuestro Centro.'
+    },
+
+];
 
 const Propuesta = () => {
     return (
         <main className="propuesta-container">
-            {/* SECCIÓN HERO: Con imagen de fondo (la principal del carrusel) */}
+            {/* SECCIÓN HERO */}
             <section className="propuesta-hero" style={{ backgroundImage: "url('/img/centrofrente.jpeg')" }}>
                 <div className="hero-overlay">
                     <span className="subtitle"><strong>NUESTRA METODOLOGÍA</strong></span>
@@ -16,7 +71,7 @@ const Propuesta = () => {
                 </div>
             </section>
 
-            {/* SECCIÓN PILARES: Con miniaturas del carrusel */}
+            {/* SECCIÓN PILARES */}
             <section className="pilares-grid">
                 <div className="pilar-card">
                     <div className="pilar-image">
@@ -57,7 +112,6 @@ const Propuesta = () => {
                 <h2>Un espacio de formación y salud</h2>
 
                 <div className="detalle-grid">
-                    {/* Bloque 1: Educación y Salud */}
                     <div className="detalle-bloque">
                         <h3>Apoyo Escolar y Terapéutico</h3>
                         <p>
@@ -67,7 +121,6 @@ const Propuesta = () => {
                         </p>
                     </div>
 
-                    {/* Bloque 2: Atención Clínica */}
                     <div className="detalle-bloque">
                         <h3>Atención Integral</h3>
                         <p>
@@ -77,7 +130,6 @@ const Propuesta = () => {
                         </p>
                     </div>
 
-                    {/* Bloque 3: Comunidad Profesional */}
                     <div className="detalle-bloque">
                         <h3>Desarrollo para Profesionales</h3>
                         <p>
@@ -93,14 +145,40 @@ const Propuesta = () => {
                 </div>
             </section>
 
-            <section id="nuestros-espacios" className="espacios-detalle" style={{ padding: '60px 0' }}>
-                <div className="container">
-                    <h2>Nuestros <span>Espacios</span></h2>
-                    <p>Contamos con instalaciones diseñadas para la comodidad y seguridad...(Proximamente)</p>
-                    {/* Aquí puedes poner una galería de fotos o una descripción más larga */}
-                    <div className="galeria-simple">
-                        {/* <img src="..." /> */}
-                    </div>
+            {/* --- SECCIÓN NUESTROS ESPACIOS CON CARRUSEL --- */}
+            <section id="nuestros-espacios" className="espacios-detalle-section">
+                <div className="container-espacios">
+                    <h2 className="titulo-seccion-espacios">Nuestros <span>Espacios</span></h2>
+                    <p className="subtitulo-seccion-espacios">Conocé las instalaciones de Centro Raíces, pensadas para tu bienestar.</p>
+                    
+                    {/* Configurador del Carrusel */}
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay, EffectFade]} // Módulos activados
+                        effect={'fade'} // Efecto suave de desvanecido
+                        spaceBetween={0} // Sin espacio entre slides (ya que ocupan todo el ancho)
+                        slidesPerView={1} // Una foto por vez
+                        navigation // Flechas activadas
+                        pagination={{ clickable: true }} // Puntos activados y clickeables
+                        autoplay={{ delay: 6000 }} // Cambia cada 6 segundos
+                        loop={true} // Vuelve al principio infinitamente
+                        className="mySwiperEspacios"
+                    >
+                        {fotosEspacios.map((foto) => (
+                            <SwiperSlide key={foto.id}>
+                                <div className="slide-espacio-content">
+                                    <div className="slide-image-wrapper">
+                                        <img src={foto.url} alt={foto.titulo} className="slide-image-full" />
+                                    </div>
+                                    <div className="slide-text-overlay">
+                                        <div className="slide-text-box">
+                                            <h3>{foto.titulo}</h3>
+                                            <p>{foto.descripcion}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </section>
         </main>
