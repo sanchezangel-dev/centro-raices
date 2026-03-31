@@ -32,8 +32,8 @@ const fotosEspacios = [
     {
         id: 3,
         url: 'img/espacio-consultorioinfantil.jpeg',
-        titulo: 'Terapias Infantiles en un Entorno Único',
-        descripcion: 'Nuestras instalaciones combinan calidez y funcionalidad para ofrecerte la contención que tu hijo necesita. Un espacio pensado para que se sienta cómodo, escuchado y en confianza desde el primer momento.'
+        titulo: 'Consultorio Niños/Adolescentes',
+        descripcion: 'Un espacio pensado para que los más chicos se sientan cómodos, escuchados y en confianza para expresarse desde la primera sesión.'
     },
         {
         id: 4,
@@ -44,14 +44,14 @@ const fotosEspacios = [
     {
         id: 5,
         url: 'img/espacio-encuentro.jpeg',
-        titulo: 'Espacio de Co-Visión y Encuentro',
-        descripcion: 'Un entorno amplio y funcional diseñado para el intercambio profesional y el aprendizaje grupal. Es el escenario ideal para nuestras instancias de co-visión de casos y capacitaciones, ofreciendo un clima de seriedad y calidez que invita al diálogo y al crecimiento compartido.'
+        titulo: 'Espacio de Encuentro',
+        descripcion: 'Entorno funcional para el intercambio profesional, co-visión de casos y capacitaciones grupales en un clima de calidez y crecimiento compartido'
     },
     {
         id: 6,
         url: 'img/espacio-salaespera.jpeg',
         titulo: 'Sala de Espera',
-        descripcion: 'Disfrutá de un entorno único y armonioso mientras esperás. Nuestros espacios combinan calidez y diseño para ofrecerte la contención que necesitás desde que llegás a nuestro Centro.'
+        descripcion: 'Un entorno cálido y armonioso diseñado para ofrecerte contención y comodidad desde el primer momento en que llegas a nuestro Centro.'
     },
 
 ];
