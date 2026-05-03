@@ -36,7 +36,7 @@ const Home = () => {
       title: "Espacios de juego y expresión",
       highlight: "Talleres Creativos",
       slogan: "Descubriendo talentos en comunidad.",
-      img: "/img/talleres.jpg",
+      img: "/img/talleresh.png",
       btnText: "Ver talleres",
       link: "/Talleres" 
     },

@@ -8,18 +8,14 @@ import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade'; // Efecto opcional de desvanecido
+import 'swiper/css/effect-fade';
 
 import '../styles/Propuesta.css';
 
-// --- DATOS DEL CARRUSEL ---
-// Aquí cargás la información de las fotos nuevas. 
-// Asegurate de optimizarlas primero (ver Paso 4).
 const fotosEspacios = [
     {
         id: 1,
-        // Reemplazá por la ruta de tu foto optimizada (ej: .webp)
-        url: '/img/recepcion.jpeg', 
+        url: '/img/recepcion.jpeg',
         titulo: 'Nuestra Recepción',
         descripcion: 'Un espacio cálido y luminoso diseñado para darte la bienvenida y que te sientas cómodo desde el primer momento.'
     },
@@ -35,7 +31,7 @@ const fotosEspacios = [
         titulo: 'Consultorio Niños/Adolescentes',
         descripcion: 'Un espacio pensado para que los más chicos se sientan cómodos, escuchados y en confianza para expresarse desde la primera sesión.'
     },
-        {
+    {
         id: 4,
         url: 'img/espacio-apoyoescolar.jpeg',
         titulo: 'Apoyo Escolar',
@@ -53,7 +49,6 @@ const fotosEspacios = [
         titulo: 'Sala de Espera',
         descripcion: 'Un entorno cálido y armonioso diseñado para ofrecerte contención y comodidad desde el primer momento en que llegas a nuestro Centro.'
     },
-
 ];
 
 const Propuesta = () => {
@@ -107,6 +102,31 @@ const Propuesta = () => {
                 </div>
             </section>
 
+            {/* SECCIÓN MISIÓN Y VISIÓN (BLOQUES BLANCOS INDEPENDIENTES) */}
+            <section className="mision-vision-container">
+                <div className="mv-bloque-blanco">
+                    <h3>Misión</h3>
+                    <p>
+                        La misión del centro es brindar un espacio de atención integral en salud mental, humano y cálido,
+                        donde quienes se acercan se sientan cuidados, escuchados y contenidos. Un lugar que reconoce la
+                        singularidad de cada recorrido, donde la calidez, la escucha y la presencia humana atraviesan cada encuentro.
+                        A través del trabajo conjunto e interdisciplinario de profesionales comprometidos, buscamos que quien llegue
+                        al centro pueda irse distinto a como vino, habiendo vivido una experiencia de acompañamiento significativa y transformadora.
+                    </p>
+                </div>
+
+                <div className="mv-bloque-blanco">
+                    <h3>Visión</h3>
+                    <p>
+                        Proyectamos un espacio que crezca como una red de cuidado en salud mental, consolidándose como referente
+                        en la zona y expandiéndose a otros barrios sin perder la calidad humana, la escucha activa y la contención que lo caracterizan.
+                        Aspiramos a que cada sede mantenga una identidad común basada en el cuidado, el trabajo ético y el acompañamiento cercano.
+                        Asimismo, buscamos fortalecer un perfil psicoeducativo, articulando con universidades y desarrollando propuestas de formación,
+                        talleres y espacios de aprendizaje para todas las edades.
+                    </p>
+                </div>
+            </section>
+
             {/* SECCIÓN DETALLE FINAL */}
             <section className="propuesta-detalle">
                 <h2>Un espacio de formación y salud</h2>
@@ -150,17 +170,16 @@ const Propuesta = () => {
                 <div className="container-espacios">
                     <h2 className="titulo-seccion-espacios">Nuestros <span>Espacios</span></h2>
                     <p className="subtitulo-seccion-espacios">Conocé las instalaciones de Centro Raíces, pensadas para tu bienestar.</p>
-                    
-                    {/* Configurador del Carrusel */}
+
                     <Swiper
-                        modules={[Navigation, Pagination, Autoplay, EffectFade]} // Módulos activados
-                        effect={'fade'} // Efecto suave de desvanecido
-                        spaceBetween={0} // Sin espacio entre slides (ya que ocupan todo el ancho)
-                        slidesPerView={1} // Una foto por vez
-                        navigation // Flechas activadas
-                        pagination={{ clickable: true }} // Puntos activados y clickeables
-                        autoplay={{ delay: 6000 }} // Cambia cada 6 segundos
-                        loop={true} // Vuelve al principio infinitamente
+                        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+                        effect={'fade'}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 6000 }}
+                        loop={true}
                         className="mySwiperEspacios"
                     >
                         {fotosEspacios.map((foto) => (

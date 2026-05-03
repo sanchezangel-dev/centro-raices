@@ -7,7 +7,7 @@ const Talleres = () => {
   return (
     <div className="talleres-page">
       {/* Banner Consistente con Apoyo Escolar */}
-      <section className="talleres-hero" style={{ backgroundImage: "url('/img/talleres.jpg')" }}>
+      <section className="talleres-hero" style={{ backgroundImage: "url('/img/talleres1.jpeg')" }}>
         <div className="hero-overlay">
           <div className="hero-text-container">
             <h1 className="title-white">NUESTROS TALLERES</h1>
